@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Template v1.0</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Content Starts -->
+    <div class="content">
+        <div class="sidebar">
+            <div class="sidebar-inner">
+                <div class="logo"><a href="#">Portal <i class="fa-solid fa-splotch"></i></a></div>
+                <a class="sidebar-link active" href="#">Dashboard</a>
+                <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Team <i
+                        class="fa-solid fa-caret-down"></i></a>
+                <div class="sidebar-submenu">
+                    <a href="#" class="sidebar-link">Add Team</a>
+                    <a href="#" class="sidebar-link">All Team</a>
+                </div>
+                <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Users <i
+                        class="fa-solid fa-caret-down"></i></a>
+                <div class="sidebar-submenu">
+                    <a href="#" class="sidebar-link">Add User</a>
+                    <a href="#" class="sidebar-link">All Users</a>
+                </div>
+                <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Quiz <i
+                        class="fa-solid fa-caret-down"></i></a>
+                <div class="sidebar-submenu">
+                    <a href="#" class="sidebar-link">Add Quiz</a>
+                    <a href="#" class="sidebar-link">All Quiz</a>
+                </div>
+                <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Questions <i
+                        class="fa-solid fa-caret-down"></i></a>
+                <div class="sidebar-submenu">
+                    <a href="#" class="sidebar-link">Add Question</a>
+                    <a href="#" class="sidebar-link">All Questions</a>
+                </div>
+                <a class="sidebar-link" href="#">Pricing</a>
+                <a class="sidebar-link" href="#">Theme</a>
+                <a class="sidebar-link" href="#">Certificate</a>
+                <a class="sidebar-link" href="#">Profile</a>
+                <a class="sidebar-link" href="#">Account</a>
+                <a class="sidebar-link" href="#">Security</a>
+                <a class="sidebar-link" href="#">Logout</a>
+            </div>
+        </div>
+        <div class="toggle-icon"><i class="fa-solid fa-caret-left"></i></div>
+        <div class="main">
+            <div class="theme-icon">
+                <i class="fa-solid fa-sun"></i>
+            </div>
+            <div class="user-menu">
+                <div class="user-menu-links">
+                    <a href="javascript:void(0)"><i class="fa fa-user"></i></a>
+                    <a href="javascript:void(0)"><i class="fa fa-key"></i></a>
+                    <a href="javascript:void(0)"><i class="fa fa-bell"></i></a>
+                    <a href="javascript:void(0)"><i class="fa fa-sign-out-alt"></i></a>
+                </div>
+                <div class="toggle-user-menu"><i class="fa-solid fa-caret-left"></i></div>
+            </div>
+            <div class="data">
+                <h2 class="page-heading">Dashboard</h2>
+
+                <div class="all-counter-blocks">
+                    <div class="counter-block">
+                        <h4>Total Users</h4>
+                        <span data-counter="306">0</span>
+                    </div>
+                    <div class="counter-block">
+                        <h4>Total Team</h4>
+                        <span data-counter="16">0</span>
+                    </div>
+                    <div class="counter-block">
+                        <h4>Total Quiz</h4>
+                        <span data-counter="160">0</span>
+                    </div>
+                    <div class="counter-block">
+                        <h4>Total Questions</h4>
+                        <span data-counter="1720">0</span>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <h3>Recent Users</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Mobile</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Vinay</td>
+                                <td>vinay@gmail.com</td>
+                                <td>7206881088</td>
+                                <td>5 mins ago</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Vinay</td>
+                                <td>vinay@gmail.com</td>
+                                <td>7206881088</td>
+                                <td>5 mins ago</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Vinay</td>
+                                <td>vinay@gmail.com</td>
+                                <td>7206881088</td>
+                                <td>5 mins ago</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Vinay</td>
+                                <td>vinay@gmail.com</td>
+                                <td>7206881088</td>
+                                <td>5 mins ago</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="form-container">
+                    <h3>Add User</h3>
+                  <form action="">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="number" id="mobile" required>
+                            <label for="mobile">Mobile</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="age" required>
+                            <label for="age">Age</label>
+                        </div>
+                    </div>
+                    <button class="btn">Submit</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content Ends -->
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Chart js -->
+    <!-- JS Link -->
+    <script src="assets/chart.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+</html>
