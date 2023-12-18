@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,44 +13,44 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!-- Content Starts -->
     <div class="content">
         <div class="sidebar">
             <div class="sidebar-inner">
-                <div class="logo"><a href="#">Portal <i class="fa-solid fa-splotch"></i></a></div>
-                <a class="sidebar-link active" href="#">Dashboard</a>
+                <div class="logo"><a href="/">Portal <i class="fa-solid fa-splotch"></i></a></div>
+                <a class="sidebar-link active" href="/">Dashboard</a>
                 <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Team <i
                         class="fa-solid fa-caret-down"></i></a>
                 <div class="sidebar-submenu">
-                    <a href="#" class="sidebar-link">Add Team</a>
-                    <a href="#" class="sidebar-link">All Team</a>
+                    <a href="/pages/add-team.html" class="sidebar-link">Add Team</a>
+                    <a href="/pages/all-team.html" class="sidebar-link">All Team</a>
                 </div>
                 <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Users <i
                         class="fa-solid fa-caret-down"></i></a>
                 <div class="sidebar-submenu">
-                    <a href="#" class="sidebar-link">Add User</a>
-                    <a href="#" class="sidebar-link">All Users</a>
+                    <a href="/pages/add-user.html" class="sidebar-link">Add User</a>
+                    <a href="/pages/all-user.html" class="sidebar-link">All Users</a>
                 </div>
                 <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Quiz <i
                         class="fa-solid fa-caret-down"></i></a>
                 <div class="sidebar-submenu">
-                    <a href="#" class="sidebar-link">Add Quiz</a>
-                    <a href="#" class="sidebar-link">All Quiz</a>
+                    <a href="/pages/add-quiz.html" class="sidebar-link">Add Quiz</a>
+                    <a href="/pages/all-quiz.html" class="sidebar-link">All Quiz</a>
                 </div>
                 <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Questions <i
                         class="fa-solid fa-caret-down"></i></a>
                 <div class="sidebar-submenu">
-                    <a href="#" class="sidebar-link">Add Question</a>
-                    <a href="#" class="sidebar-link">All Questions</a>
+                    <a href="/pages/add-question.html" class="sidebar-link">Add Question</a>
+                    <a href="/pages/all-question.html" class="sidebar-link">All Questions</a>
                 </div>
-                <a class="sidebar-link" href="#">Pricing</a>
-                <a class="sidebar-link" href="#">Theme</a>
-                <a class="sidebar-link" href="#">Certificate</a>
-                <a class="sidebar-link" href="#">Profile</a>
-                <a class="sidebar-link" href="#">Account</a>
-                <a class="sidebar-link" href="#">Security</a>
-                <a class="sidebar-link" href="#">Logout</a>
+                <a class="sidebar-link" href="/pages/pricing.html">Pricing</a>
+                <a class="sidebar-link" href="/pages/certificate.html">Certificate</a>
+                <a class="sidebar-link" href="/pages/profile.html">Profile</a>
+                <a class="sidebar-link" href="/pages/account.html">Account</a>
+                <a class="sidebar-link" href="/pages/security.html">Security</a>
+                <a class="sidebar-link" href="/login.html">Logout</a>
             </div>
         </div>
         <div class="toggle-icon"><i class="fa-solid fa-caret-left"></i></div>
@@ -59,10 +60,10 @@
             </div>
             <div class="user-menu">
                 <div class="user-menu-links">
-                    <a href="javascript:void(0)"><i class="fa fa-user"></i></a>
-                    <a href="javascript:void(0)"><i class="fa fa-key"></i></a>
-                    <a href="javascript:void(0)"><i class="fa fa-bell"></i></a>
-                    <a href="javascript:void(0)"><i class="fa fa-sign-out-alt"></i></a>
+                    <a href="/pages/profile.html"><i class="fa fa-user"></i></a>
+                    <a href="/pages/security.html"><i class="fa fa-shield"></i></a>
+                    <a href="/pages/account.html"><i class="fa fa-cog"></i></a>
+                    <a href="/login.html"><i class="fa fa-sign-out-alt"></i></a>
                 </div>
                 <div class="toggle-user-menu"><i class="fa-solid fa-caret-left"></i></div>
             </div>
@@ -134,29 +135,70 @@
                 </div>
                 <div class="form-container">
                     <h3>Add User</h3>
-                  <form action="">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" id="name" required>
-                            <label for="name">Name</label>
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required>
+                                <label for="email">Email</label>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="email" id="email" required>
-                            <label for="email">Email</label>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="number" id="mobile" required>
+                                <label for="mobile">Mobile</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="age" required>
+                                <label for="age">Age</label>
+                            </div>
+                        </div>
+                        <button class="btn">Submit</button>
+                    </form>
+                </div>
+
+                <div class="card-container">
+                    <div class="all-cards">
+                        <div class="card">
+                            <div class="card-header">@charliegroup</div>
+                            <div class="card-body">
+                                <div class="details">Name: <span>Charlie Group</span></div>
+                                <div class="details">Email: <span>charlie@charliegroup.in</span></div>
+                                <div class="details">Mobile: <span>+91 9996716300</span></div>
+                                <div class="details">Address: <span>SCO 385 MC Karnal</span></div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="small btn">View More</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">@charliegroup</div>
+                            <div class="card-body">
+                                <div class="details">Name: <span>Charlie Group</span></div>
+                                <div class="details">Email: <span>charlie@charliegroup.in</span></div>
+                                <div class="details">Mobile: <span>+91 9996716300</span></div>
+                                <div class="details">Address: <span>SCO 385 MC Karnal</span></div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="small btn">View More</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">@charliegroup</div>
+                            <div class="card-body">
+                                <div class="details">Name: <span>Charlie Group</span></div>
+                                <div class="details">Email: <span>charlie@charliegroup.in</span></div>
+                                <div class="details">Mobile: <span>+91 9996716300</span></div>
+                                <div class="details">Address: <span>SCO 385 MC Karnal</span></div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="small btn">View More</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="number" id="mobile" required>
-                            <label for="mobile">Mobile</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="number" id="age" required>
-                            <label for="age">Age</label>
-                        </div>
-                    </div>
-                    <button class="btn">Submit</button>
-                  </form>
                 </div>
             </div>
         </div>
@@ -168,7 +210,7 @@
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- Chart js -->
     <!-- JS Link -->
-    <script src="assets/chart.js"></script>
     <script src="assets/app.js"></script>
 </body>
+
 </html>

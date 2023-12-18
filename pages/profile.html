@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Template v1.0</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../assets/style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Content Starts -->
+    <div class="content">
+        <div class="sidebar">
+            <div class="sidebar-inner">
+                <div class="logo"><a href="/">Portal <i class="fa-solid fa-splotch"></i></a></div>
+                <a class="sidebar-link" href="/">Dashboard</a>
+                <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Team <i
+                        class="fa-solid fa-caret-down"></i></a>
+                <div class="sidebar-submenu">
+                    <a href="/pages/add-team.html" class="sidebar-link">Add Team</a>
+                    <a href="/pages/all-team.html" class="sidebar-link">All Team</a>
+                </div>
+                <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Users <i
+                        class="fa-solid fa-caret-down"></i></a>
+                <div class="sidebar-submenu">
+                    <a href="/pages/add-user.html" class="sidebar-link">Add User</a>
+                    <a href="/pages/all-user.html" class="sidebar-link">All Users</a>
+                </div>
+                <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Quiz <i
+                        class="fa-solid fa-caret-down"></i></a>
+                <div class="sidebar-submenu">
+                    <a href="/pages/add-quiz.html" class="sidebar-link">Add Quiz</a>
+                    <a href="/pages/all-quiz.html" class="sidebar-link">All Quiz</a>
+                </div>
+                <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Questions <i
+                        class="fa-solid fa-caret-down"></i></a>
+                <div class="sidebar-submenu">
+                    <a href="/pages/add-question.html" class="sidebar-link">Add Question</a>
+                    <a href="/pages/all-question.html" class="sidebar-link">All Questions</a>
+                </div>
+                <a class="sidebar-link" href="/pages/pricing.html">Pricing</a>
+                <a class="sidebar-link" href="/pages/certificate.html">Certificate</a>
+                <a class="sidebar-link active" href="/pages/profile.html">Profile</a>
+                <a class="sidebar-link" href="/pages/account.html">Account</a>
+                <a class="sidebar-link" href="/pages/security.html">Security</a>
+                <a class="sidebar-link" href="/login.html">Logout</a>
+            </div>
+        </div>
+        <div class="toggle-icon"><i class="fa-solid fa-caret-left"></i></div>
+        <div class="main">
+            <div class="theme-icon">
+                <i class="fa-solid fa-sun"></i>
+            </div>
+            <div class="user-menu">
+                <div class="user-menu-links">
+                    <a href="/pages/profile.html"><i class="fa fa-user"></i></a>
+                    <a href="/pages/security.html"><i class="fa fa-shield"></i></a>
+                    <a href="/pages/account.html"><i class="fa fa-cog"></i></a>
+                    <a href="/login.html"><i class="fa fa-sign-out-alt"></i></a>
+                </div>
+                <div class="toggle-user-menu"><i class="fa-solid fa-caret-left"></i></div>
+            </div>
+            <div class="data">
+                <h2 class="page-heading">Profile</h2>
+
+                <div class="form-container">
+                    <h3>Edit Profile</h3>
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" required value="Vinay">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required value="vinaywebguy@gmail.com">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="number" id="mobile" required value="7206881088">
+                                <label for="mobile">Mobile</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="age" required value="24">
+                                <label for="age">Age</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group full">
+                                <textarea required name="bio" id="bio" cols="30" rows="5">Hello my name is Vinay.</textarea>
+                                <label for="bio">Bio</label>
+
+                            </div>
+                        </div>
+                        <button class="btn">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content Ends -->
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Chart js -->
+    <!-- JS Link -->
+    <script src="../assets/app.js"></script>
+</body>
+
+</html>
