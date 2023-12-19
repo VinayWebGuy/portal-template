@@ -65,8 +65,8 @@ $(".toggle-user-menu").click(function() {
 });
 
 $(document).ready(function() {
-    $('.security-toggle input[type="checkbox"]').on('change', function() {
-        var $div = $(this).closest('.security-toggle');
+    $('.single-toggle input[type="checkbox"]').on('change', function() {
+        var $div = $(this).closest('.single-toggle');
         
         if ($(this).is(':checked')) {
             $div.addClass('checked'); 
@@ -74,7 +74,38 @@ $(document).ready(function() {
             $div.removeClass('checked'); 
         }
     });
+    $('.single-toggle input[type="radio"]').on('change', function() {
+        $('.single-toggle').removeClass('checked')
+        var $div = $(this).closest('.single-toggle');
+        
+        if ($(this).is(':checked')) {
+            $div.addClass('checked'); 
+        } else {
+            $div.removeClass('checked'); 
+        }
+    });
+    $('.select_question').on('keyup', function() {
+        var searchTerm = $(this).val().toLowerCase();
+
+        $('.select-question').each(function() {
+            var questionText = $(this).find('.question-title').text().toLowerCase();
+            if (questionText.indexOf(searchTerm) > -1) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+    });
 });
+
+$('.add-ques-btn').click(function() {
+    $('.backdrop').addClass('on')
+    $('.modal').addClass('on')
+})
+$('.close-modal').click(function() {
+    $('.backdrop').removeClass('on')
+    $('.modal').removeClass('on')
+})
 
 
 

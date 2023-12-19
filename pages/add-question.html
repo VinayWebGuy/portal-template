@@ -21,7 +21,7 @@
             <div class="sidebar-inner">
                 <div class="logo"><a href="/">Portal <i class="fa-solid fa-splotch"></i></a></div>
                 <a class="sidebar-link" href="/">Dashboard</a>
-                <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Team <i
+                <a class="sidebar-link haveSubmenu" href="javxascript:void(0)">Team <i
                         class="fa-solid fa-caret-down"></i></a>
                 <div class="sidebar-submenu">
                     <a href="/pages/add-team.html" class="sidebar-link">Add Team</a>
@@ -39,17 +39,17 @@
                     <a href="/pages/add-quiz.html" class="sidebar-link">Add Quiz</a>
                     <a href="/pages/all-quiz.html" class="sidebar-link">All Quiz</a>
                 </div>
-                <a class="sidebar-link haveSubmenu" href="javascript:void(0)">Questions <i
+                <a class="sidebar-link haveSubmenu active" href="javascript:void(0)">Questions <i
                         class="fa-solid fa-caret-down"></i></a>
-                <div class="sidebar-submenu">
-                    <a href="/pages/add-question.html" class="sidebar-link">Add Question</a>
+                <div class="sidebar-submenu expanded">
+                    <a href="/pages/add-question.html" class="sidebar-link active">Add Question</a>
                     <a href="/pages/all-question.html" class="sidebar-link">All Questions</a>
                 </div>
                 <a class="sidebar-link" href="/pages/pricing.html">Pricing</a>
                 <a class="sidebar-link" href="/pages/certificate.html">Certificate</a>
                 <a class="sidebar-link" href="/pages/profile.html">Profile</a>
                 <a class="sidebar-link" href="/pages/account.html">Account</a>
-                <a class="sidebar-link active" href="/pages/security.html">Security</a>
+                <a class="sidebar-link" href="/pages/security.html">Security</a>
                 <a class="sidebar-link" href="/login.html">Logout</a>
             </div>
         </div>
@@ -68,46 +68,70 @@
                 <div class="toggle-user-menu"><i class="fa-solid fa-caret-left"></i></div>
             </div>
             <div class="data">
-                <h2 class="page-heading">Security</h2>
+                <h2 class="page-heading">Add Question</h2>
 
-                <div class="container">
-                    <h3>Manage Security</h3>
-                    <div class="all-toggles">
-                        <div class="single-toggle">
-                            <label for="tfa">Two Factor Authentication</label>
-                            <input type="checkbox" name="tfa" id="tfa">
-                        </div>
-                        <div class="single-toggle">
-                            <label for="multiple_login">Multiple Login</label>
-                            <input type="checkbox" name="multiple_login" id="multiple_login">
-                        </div>
-                        <div class="single-toggle checked">
-                            <label for="public_account">Public Account</label>
-                            <input checked type="checkbox" name="public_account" id="public_account">
-                        </div>
-                    </div>
-                </div>
                 <div class="form-container">
-                    <h3>Change Password</h3>
+                    <h3>Question Details</h3>
                     <form action="">
                         <div class="form-row">
-                            <div class="form-group three">
-                                <input type="password" id="old_password" required>
-                                <label for="old_password">Old Password</label>
-                            </div>
-                            <div class="form-group three">
-                                <input type="password" id="new_password" required>
-                                <label for="new_password">New Password</label>
-                            </div>
-                            <div class="form-group three">
-                                <input type="password" id="confirm_password" required>
-                                <label for="confirm_password">Confirm Password</label>
+                            <div class="form-group full">
+                                <input type="text" id="title" required>
+                                <label for="title">Title</label>
                             </div>
                         </div>
-                        <button class="btn">Update</button>
+                        <div class="form-row">
+                            <div class="form-group four">
+                                <input type="text" id="option1" required>
+                                <label for="option1">Option 1</label>
+                            </div>
+                            <div class="form-group four">
+                                <input type="text" id="option2" required>
+                                <label for="option2">Option 2</label>
+                            </div>
+                            <div class="form-group four">
+                                <input type="text" id="option3" required>
+                                <label for="option3">Option 3</label>
+                            </div>
+                            <div class="form-group four">
+                                <input type="text" id="option4" required>
+                                <label for="option4">Option 4</label>
+                            </div>
+                        </div>
+                        <div class="all-toggles">
+                            <div class="single-toggle">
+                                <label for="option_1">Option 1</label>
+                                <input type="radio" name="ans" id="option_1">
+                            </div>
+                            <div class="single-toggle">
+                                <label for="option_2">Option 2</label>
+                                <input type="radio" name="ans" id="option_2">
+                            </div>
+                            <div class="single-toggle">
+                                <label for="option_3">Option 3</label>
+                                <input type="radio" name="ans" id="option_3">
+                            </div>
+                            <div class="single-toggle">
+                                <label for="option_4">Option 4</label>
+                                <input type="radio" name="ans" id="option_4">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="number" id="correct_mark" required value="1">
+                                <label for="correct_mark">Correct Mark</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="nagative_mark" required value="0">
+                                <label for="nagative_mark">Nagative Mark</label>
+                            </div>
+                            
+                        </div>
+
+
+                        <button class="btn">Add</button>
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
@@ -118,6 +142,7 @@
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- Chart js -->
     <!-- JS Link -->
+    <script src="../assets/libraries.js"></script>
     <script src="../assets/app.js"></script>
 </body>
 
