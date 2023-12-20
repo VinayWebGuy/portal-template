@@ -1,0 +1,65 @@
+@media screen and (max-width: 1299px) {
+    :root {
+        --sidebar-width: 220px;
+    }
+    .all-cards {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .card {
+        width: calc(50% - 10px) !important;
+        margin: 8px 0;
+    }
+}
+@media screen and (max-width: 899px) {
+    :root {
+        --sidebar-width: 200px;
+    }
+    .all-counter-blocks {
+      flex-wrap: wrap;
+      gap: 0;
+    }
+    .counter-block {
+        width: calc(50% - 15px) !important;
+        margin: 8px 0;
+    }
+    .counter-block span {
+        font-size: 2rem !important;
+    }
+    .card {
+        width:100% !important;
+    }
+    .form-group {
+        position: relative;
+        width: 100% !important;
+    }
+    .form-group input, .form-group textarea, .form-group select {
+        padding: 12px 8px !important;
+    }
+    .form-group label {
+       font-size: .9rem !important;
+    }
+    .btn {
+        padding: 10px !important;
+    }
+    .btn.small {
+        padding: 5px 6px !important;
+    }
+    th, td {
+        padding: 8px !important; 
+    }
+    .card-header {
+        font-weight: 700 !important;
+        font-size: 1rem !important;
+    }
+    .all-toggles {
+        flex-wrap: wrap;
+    }
+    .pricing-container {
+        flex-wrap: wrap;
+    }
+    .single-certificate {
+        width: calc(50% - 15px) !important;
+
+    }
+}
